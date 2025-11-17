@@ -71,23 +71,3 @@ Perform hyperparameter tuning
 Print accuracy and macro-F1 results
 Save confusion matrices and feature-importance plots into figures/
 
-
-## 📊 Results Summary
-SVM (RBF) achieved the best overall performance
-Test Accuracy: 0.8652
-Macro-F1: 0.8716
-Logistic Regression and Random Forest performed similarly
-Macro-F1 around 0.869
-
-## 🏗️ Feature Engineering
-The dataset includes both engineered and directly derived features:
-Behavioural: n_pressed, max_consecutive_run, floor_span
-Floor-specific indicators: press_B, press_G, press_1 … press_12
-Temporal: hour, sin_hour, cos_hour
-Contextual: has_basement, has_ground, is_weekend
-Numeric features were standardised using a scikit-learn StandardScaler, while binary indicators were kept as-is.
-
-
-## 📚 Academic Context
-This project is submitted as part of the 7072CEM Machine Learning module at Coventry University.
-The accompanying scientific paper is written in IEEE format, and a viva presentation demonstrates the full pipeline.
